@@ -80,7 +80,7 @@ function bondJSON(data){
 			<b>"Film":</b>1 <br />
 			<b>"Title":</b>"Dr. No"<br />
 			<b>"Year":</b>1962<br />
-			<b>"Director":</br>"Terence Young"<br />
+			<b>"Director":</b>"Terence Young"<br />
 			<b>"Producers":</b>"Harry Saltzman and Albert R. Broccoli"<br />
 			<b>"Writers":</b>"Richard Maibaum, Johanna Harwood and Berkely Mather"<br />
 			<b>"Composer":</b>"Monty Norman"<br />
