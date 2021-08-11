@@ -59,13 +59,31 @@ function bondJSON(data){
 //JSON processing data goes here
 	console.log(data);
 
-	let myData = JSON.stringify(data,null,4);
+	//let myData = JSON.stringify(data,null,4);
 
-	myData = '<pre>' + myData + '</pre>';
+	//myData = '<pre>' + myData + '</pre>';
 
-	$("#output").html(myData);
+	//$("#output").html(myData);
 
 	//$("#output").text(JSON.stingify(data));
+}
+
+function bondTemplate(film){
+	return `
+	<div class="film">
+			<b>"Film":</b> ${film.Film}<br />
+			<b>"Title":</b>"${film.Title}<br />
+			<b>"Year":</b>${film.Year}<br />
+			<b>"Director":</b>${film.Director}<br />
+			<b>"Producers":</b>${film.Producers}<br />
+			<b>"Writers":</b>${film.Writers}<br />
+			<b>"Composer":</b>${film.Composer}<br />
+			<b>"Bond":</b>${film.Bond}<br />
+			<b>"Budget":</b>${film.Budget}<br />
+			<b>"BoxOffice":</b>${film.BoxOffice}<br />
+			<div class="pic"><img src="thumbnails/${film.Image}"/></div>
+		</div>
+	`;
 }
 
 </script>
@@ -76,6 +94,7 @@ function bondJSON(data){
 		<a href="box" class="category">Bond Films By International Box Office Totals</a>
 		<h3 id="filmtitle">Title Will Go Here</h3>
 		<div id="films">
+			<!--
 			<div class="film">
 			<b>"Film":</b>1 <br />
 			<b>"Title":</b>"Dr. No"<br />
@@ -89,6 +108,7 @@ function bondJSON(data){
 			<b>"BoxOffice":</b>"$59,567,035.00"<br />
 			<div class="pic"><img src="thumbnails/dr-no.jpg"/></div>
 			</div>
+			-->
 		</div>
 		<div id="output">Results go here</div>
 	</body>
